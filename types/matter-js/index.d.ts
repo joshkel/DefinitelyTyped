@@ -2185,7 +2185,7 @@ declare namespace Matter {
         * @property constraint
         * @type constraint
         */
-        constraint?: Constraint;
+        constraint?: Partial<Constraint>;
 
         /**
         * An `Object` that specifies the collision filter properties.
