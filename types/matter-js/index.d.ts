@@ -651,7 +651,7 @@ declare namespace Matter {
          * @param {body} body
          * @param {number} inertia
          */
-        static setInertia(body: Body, interna: number): void;
+        static setInertia(body: Body, inertia: number): void;
         /**
          * Sets the body's vertices and updates body properties accordingly, including inertia, area and mass (with respect to `body.density`).
          * Vertices will be automatically transformed to be orientated around their centre of mass as the origin.
@@ -1312,7 +1312,7 @@ declare namespace Matter {
 
         /**
          * Creates a new composite. The options parameter is an object that specifies any properties you wish to override the defaults.
-        * See the properites section below for detailed information on what you can pass via the `options` object.
+        * See the properties section below for detailed information on what you can pass via the `options` object.
         * @method create
         * @param {} [options]
         * @return {composite} A new composite
@@ -3416,7 +3416,7 @@ declare namespace Matter {
         static chain(): Function
 
         /**
-         * Chains a function to excute before the original function on the given `path` relative to `base`.
+         * Chains a function to execute before the original function on the given `path` relative to `base`.
          * See also docs for `Common.chain`.
          * @method chainPathBefore
          * @param {} base The base object
@@ -3427,7 +3427,7 @@ declare namespace Matter {
         static chainPathBefore(base: object, path: string, func: Function): Function
 
         /**
-         * Chains a function to excute after the original function on the given `path` relative to `base`.
+         * Chains a function to execute after the original function on the given `path` relative to `base`.
          * See also docs for `Common.chain`.
          * @method chainPathAfter
          * @param {} base The base object
