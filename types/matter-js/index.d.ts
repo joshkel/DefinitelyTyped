@@ -139,7 +139,7 @@ declare namespace Matter {
         * @param {number} [minimumArea=10]
         * @return {body}
         */
-        static fromVertices(x: number, y: number, vertexSets: Array<Array<Vector>>, options?: IBodyDefinition, flagInternal?: boolean, removeCollinear?: number, minimumArea?: number): Body;
+        static fromVertices(x: number, y: number, vertexSets: Array<Array<Vector>> | Array<Vector>, options?: IBodyDefinition, flagInternal?: boolean, removeCollinear?: number, minimumArea?: number): Body;
     }
 
     export interface IBodyDefinition {
