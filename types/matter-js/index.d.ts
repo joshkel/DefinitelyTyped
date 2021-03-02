@@ -1860,6 +1860,8 @@ declare namespace Matter {
          */
         damping: number;
 
+        angularStiffness: number;
+
         /**
          * A `String` denoting the type of object.
          *
@@ -2546,6 +2548,7 @@ declare namespace Matter {
         * @type render
         */
         controller: any;
+        mouse?: Mouse;
         /**
          * A reference to the element where the canvas is to be inserted (if `render.canvas` has not been specified)
         *
